@@ -7,10 +7,18 @@
 objc-ViewsInCode
 ================
 
-The storyboard makes it incredibly easy to create a visual scaffolding for your application with very little effort.  Apple, in general, recommends using storyboards whenever possible to create visual interfaces, but their vision overlooks the realities for many developers working in teams.  While storyboards offer the advantage of speed and visibility, they also, as you've seen, don't play very nicely with version control systems like Git.  On top of that, building interfaces using a combination of storyboards and code, can make it awkward to reuse views in later projects where both the code and bits of storyboards must be migrated.  Nibs (ironically given that they predate the storyboard) offer a partial solution to the issue by working much better with version control and being coupled to a single view.  On the other hand, storyboards and nibs do offer the advantage of being decoupled from many changes that Apple may make in their implementations of visual elements.  In other words, if you create an interface in code and Apple changes their implementation, you'll likely have a lot of work to do to adapt your codebase to the new OS version.  With storyboards and Nibs on the other hand, as long as Apple hasn't removed the element all together, XCode will handle much of the upgrade process for you.  
+##To Storyboard or not to Storyboard? 
+
+
+###Storyboards
+The storyboard makes it incredibly easy to create a visual scaffolding for your application with very little effort.  Apple, in general, recommends using storyboards whenever possible to create visual interfaces, but their vision overlooks the realities for many developers working in teams.  While storyboards offer the advantage of speed and visibility, they also, as you've seen, don't play very nicely with version control systems like Git.  On top of that, building interfaces using a combination of storyboards and code, can make it awkward to reuse views in later projects where both the code and bits of storyboards must be migrated.  
+
+###Nibs 
+Nibs (ironically given that they predate the storyboard) offer a partial solution to the issue by working much better with version control and being coupled to a single view.  On the other hand, storyboards and nibs do offer the advantage of being decoupled from many changes that Apple may make in their implementations of visual elements.  In other words, if you create an interface in code and Apple changes their implementation, you'll likely have a lot of work to do to adapt your codebase to the new OS version.  With storyboards and Nibs on the other hand, as long as Apple hasn't removed the element all together, XCode will handle much of the upgrade process for you.  
 
 See me waffling a little bit? The reality is there isn't one answer to how you'll be creating UI after you leave Flatiron School.  Likely, you'll design some interfaces with nibs and xibs, others with storyboards, others 100% in code, and many more using a combination of methods.  
 
+###Code 
 Today, my friends, we undertake the unenviable task of building a user interface completely in code.  You shall recreate your iPhone's 'Phone' app whilst fighting the urge to drag-and-drop.  
 
 Fear not, whether you realize it or not, you already know how to do this.  You know how to instantiate objects (alloc] init] ??) you know how to modify their properties and call their designated initializers, and we began the class setting the windows root view controller.  There are some idiosyncrasies with creating interfaces in code, but the documentation is generally very helpful for this purpose.  In the cases where it isn't, StackOverflow is your friend, people have done everything that can be done in the storyboard in code and there is a StackOverflow question for whatever you can't figure out.  
