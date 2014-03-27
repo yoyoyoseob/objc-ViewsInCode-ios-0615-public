@@ -31,7 +31,7 @@ The phone app is built on a UITabBarController.  When creating UI in code (and i
 
 - `@property(nonatomic, copy) NSArray *viewControllers` - The array of view controllers represented by each tab. 
 
-##UINavigationController 
+###UINavigationController 
 
 All but one of the ViewControllers in the 'Phone' app is embedded in a Navigation Controller.  You'll want to embed your ViewControllers in Navigation Controllers and add those navigation controllers to your TabBarControllers' viewControllers Array. 
 
